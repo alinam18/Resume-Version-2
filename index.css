@@ -14,6 +14,7 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
+    position: absolutes;
 }
 
 .nav{
@@ -63,4 +64,12 @@ nav ul li a{
     margin: 10px 0 30px;
     color: #333;
     font-weight: 200;
+}
+
+.featuring-img {
+    width: 600px;
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
+
 }
