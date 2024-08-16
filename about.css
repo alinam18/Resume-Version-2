@@ -15,7 +15,7 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 
 .logo{
@@ -50,8 +50,10 @@ nav ul li a{
 /* body part  */
 
 .leftSection{
+    position: relative;
+    z-index: 2;
     margin-top: 15%;
-    max-width: 50%;
+    max-width: 40%;
     left:0;
     bottom: 35%;
 }
@@ -154,6 +156,14 @@ nav ul li a{
 
 }
 
+.featuring-img {
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+
+}
+
 
 .footer{
     position: absolute; 
@@ -164,6 +174,7 @@ nav ul li a{
     text-align: center;
     font-weight: 200;
 }
+
 
 @media (max-width: 600px) {
 
@@ -177,6 +188,7 @@ nav ul li a{
     
     }
     .experiences {
+        z-index: 2;
         max-width: 85%;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -185,9 +197,12 @@ nav ul li a{
     .leftSection h1{
         font-size: 50px;
     }
-    
 
-
-
+    .featuring-img {
+        width: 400px;
+        /* position: absolute; */
+        left: 25%;
+        bottom: 5%;
+    }
 
 }
