@@ -56,7 +56,7 @@ nav ul li a{
 }
 
 .content{
-    margin-top: 10%;
+    margin-top: 15%;
     max-width: 600px;
 
 }
@@ -76,7 +76,8 @@ nav ul li a{
     width: 800px;
     position: absolute;
     right: 0;
-    bottom: 30%;
+    bottom: 20%;
+    /* margin-top: 15%; */
 }
 
 .featuring-img.animation{
