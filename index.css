@@ -14,7 +14,7 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
-    position: absolutes;
+    position: absolute;
 }
 
 
@@ -56,8 +56,10 @@ nav ul li a{
 }
 
 .content{
+    position: relative;
     margin-top: 15%;
     max-width: 600px;
+    z-index: 2;
 
 }
 .content h1{
@@ -77,6 +79,7 @@ nav ul li a{
     position: absolute;
     right: 0;
     bottom: 20%;
+
     /* margin-top: 15%; */
 }
 
@@ -94,6 +97,39 @@ nav ul li a{
     100%{
         opacity: 1;
         transform: translateY(0px )
+    }
+    
+}
+
+
+/* new css depedning on the size  */
+
+
+@media (max-width: 600px) {
+
+    nav{
+        padding: 10px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0; 
+        top: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 10px 15px;
+    }
+    .featuring-img {
+        width: 600px;
+        position: absolute;
+        left: 5%;
+        bottom: 18%
+
     }
     
 }
