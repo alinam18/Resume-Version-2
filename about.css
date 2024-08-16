@@ -66,6 +66,8 @@ nav ul li a{
     font-size: 25px;
     font-weight: 200;
     margin: 10px 0 30px;
+    animation-delay: 0.5s;
+
 }
 
 .experiences{
@@ -73,6 +75,7 @@ nav ul li a{
     position: absolute;
     right: 10%;
     top: 30%;
+
 }
 
 
@@ -81,6 +84,7 @@ nav ul li a{
     text-align: center;
     padding: 0;
     font-size: 25px;
+
 }
 
 .title{
@@ -96,19 +100,9 @@ nav ul li a{
     cursor: pointer;
     margin-bottom: 12%;
     font-weight: 200;
+
 }
 
-.moreInformation {
-    position: absolute;
-    left: 100%;
-    width: 100%;
-    display: none;
-    padding: 10px 15px;
-    border: 2px solid #333;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    z-index: 2;
-}
 
 .moreInformation {
     position: fixed;
@@ -140,4 +134,22 @@ nav ul li a{
     display: 130%;
     visibility: visible;
     opacity: 1;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px )
+    }
+    
+}
+.experiences.animation{
+    animation-delay: 1s;
+
 }
