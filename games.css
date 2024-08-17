@@ -22,6 +22,7 @@
 }
 
 
+
 .logo{
     width:200px;
 }
@@ -82,10 +83,7 @@ nav ul li a{
     bottom: 0%; /* Ensure the footer stays at the bottom */
 }
 
-.project-information {
-    display: None;
-    cursor: pointer;
-}
+
 .animation {
     opacity: 0;
     transform: translateY(30px);
