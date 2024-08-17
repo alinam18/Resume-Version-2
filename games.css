@@ -16,7 +16,7 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
-    /* position: absolute; */
+    position: absolute;
     background-size: cover;
 
 }
@@ -83,6 +83,14 @@ nav ul li a{
     bottom: 0%; /* Ensure the footer stays at the bottom */
 }
 
+.featuring-img {
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+
+}
+
 
 .animation {
     opacity: 0;
@@ -103,6 +111,15 @@ nav ul li a{
 @media (max-width: 600px) {
     .title h1{
         font-size: 50px;
+    }
+
+
+    .featuring-img {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    
     }
 
 }
