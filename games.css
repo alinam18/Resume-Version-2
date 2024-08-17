@@ -92,6 +92,9 @@ nav ul li a{
 }
 
 
+.featuring-img.animation{
+    animation-delay: 1s;
+}
 .animation {
     opacity: 0;
     transform: translateY(30px);
