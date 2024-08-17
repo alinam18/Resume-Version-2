@@ -157,6 +157,7 @@ nav ul li a{
 }
 
 .featuring-img {
+    display: None; /* For now */
     width: 600px;
     position: absolute;
     left: 30%;
