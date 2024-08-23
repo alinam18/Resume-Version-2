@@ -148,6 +148,8 @@ nav ul li a{
     height: auto;
     max-height: 80vh;
     visibility: hidden;
+    box-shadow: 0px 0px 50000px rgba(0, 0, 0, 0.5);
+
     /* transition: transform 0.3s ease, visibility 0s linear 0.3s;  */
 
 
