@@ -199,11 +199,11 @@ nav ul li a{
 }
 
 .featuring-img {
-    display: none; /* For now */
-    width: 600px;
+    /* display: none; For now */
+    width: 400px;
     position: absolute;
-    left: 30%;
-    bottom: 30%;
+    left: 35%;
+    bottom: 5%;
 
 }
 
