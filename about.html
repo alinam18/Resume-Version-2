@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <!-- <script defer src="about.js"></script> -->
 </head>
 
 <body>
@@ -22,40 +23,49 @@
             <h1 class="animation">Hello World!</h1>
             <p class="animation">I am a passionate penultimate year student studying Bachelor of Data Science and Decision majoring in computational Data Science at UNSW.</p>
         </div>
-        <div class="experiences">
+
+        <!-- making another division for more clarity -->
+        <div class="experiencename">
             <ul>
-                <li class="title">Experiences</li>
-                <li class="toggleItem">Marketing Director
-                    <div class="moreInformation">
-                        <h3>UNSW Data Science Society</h3>
-                        <p>Designed innovative marketing campaigns for the Data Science Society to strengthen student engagement.</p>
-                        <p>Developed a range of branded merchandise, enhancing the society’s visibility and sense of identity.</p>
-                        <p>Demonstrated strong problem-solving skills and analytical thinking in managing and interpreting large datasets to support business decisions.</p>
-                    </div>
-                </li>
-                <li class="toggleItem">Accounting Assistant
-                    <div class="moreInformation">
-                        <h3>Parras and Associates</h3>
-                        <p>Data Integration and Automation: Implemented automated solutions for data entry and integration, enhancing productivity and accuracy in client data handling.</p>
-                        <p>Proficient in Data Analysis and Management: Leveraged financial software such as MYOB and advanced functionalities of Microsoft Excel for efficient client data management, data analysis, and reporting.</p>
-                    </div>
-                </li>
-                <li class="toggleItem">Sponsorship Director
-                    <div class="moreInformation">
-                        <h3>Nippon Student Association</h3>
-                        <p>Analysed sponsorship data to identify trends and opportunities, producing comprehensive reports for stakeholders to support decision-making processes.</p>
-                        <p>Leveraged data insights to craft persuasive proposals and negotiate sponsorship deals, resulting in successful partnerships with key industry players.</p>
-                        <p>Developed and executed sponsorship strategies based on data analysis, leading to a 50% increase in sponsor engagement and contributions.</p> 
-                    </div>
-                </li>
-                <li class="toggleItem">Cisco
-                    <div class="moreInformation">
-                        <h3>Job Shadowing</h3>
-                        <p>Analysed sponsorship data to identify trends and opportunities, producing comprehensive reports for stakeholders to support decision-making processes.</p>
-                        <p>Leveraged data insights to craft persuasive proposals and negotiate sponsorship deals, resulting in successful partnerships with key industry players.</p>
-                        <p>Developed and executed sponsorship strategies based on data analysis, leading to a 50% increase in sponsor engagement and contributions.</p> 
-                    </div>
-                </li>
+                <h1>Experiences</h1>
+                <div class="container">
+                <button type="button" class="btn" onclick="openPopup('popup1')">Marketing Director</button>
+                <div class="popup" id="popup1">
+                    <h3>Parras and Associates</h3>
+                    <p>Data Integration and Automation: Implemented automated solutions for data entry and integration, enhancing productivity and accuracy in client data handling.</p>
+                    <p>Proficient in Data Analysis and Management: Leveraged financial software such as MYOB and advanced functionalities of Microsoft Excel for efficient client data management, data analysis, and reporting.</p>
+                    <button type="button" onclick="closePopup('popup1')">Close</button>
+                </div>
+
+                <!-- Button 2 -->
+                <button type="button" class="btn" onclick="openPopup('popup2')">Accounting Assistant</button>
+                <div class="popup" id="popup2">
+                    <h3>UNSW Data Science Society</h3>
+                    <p>Designed innovative marketing campaigns for the Data Science Society to strengthen student engagement.</p>
+                    <p>Developed a range of branded merchandise, enhancing the society’s visibility and sense of identity.</p>
+                    <p>Demonstrated strong problem-solving skills and analytical thinking in managing and interpreting large datasets to support business decisions.</p>
+                    <button type="button" onclick="closePopup('popup2')">Close</button>
+                </div>
+
+                <!-- Button 3 -->
+                <button type="button" class="btn" onclick="openPopup('popup3')">Sponsorship Director</button>
+                <div class="popup" id="popup3">
+                    <h3>Nippon Student Association</h3>
+                    <p>Analysed sponsorship data to identify trends and opportunities, producing comprehensive reports for stakeholders to support decision-making processes.</p>
+                    <p>Leveraged data insights to craft persuasive proposals and negotiate sponsorship deals, resulting in successful partnerships with key industry players.</p>
+                    <p>Developed and executed sponsorship strategies based on data analysis, leading to a 50% increase in sponsor engagement and contributions.</p> 
+                    <button type="button" onclick="closePopup('popup3')">Close</button>
+                </div>
+                <!-- Button 4 -->
+                <button type="button" class="btn" onclick="openPopup('popup4')">Cisco</button>
+                <div class="popup" id="popup4">
+                    <h3>Job Shadowing</h3>
+                    <p>Analysed sponsorship data to identify trends and opportunities, producing comprehensive reports for stakeholders to support decision-making processes.</p>
+                    <p>Leveraged data insights to craft persuasive proposals and negotiate sponsorship deals, resulting in successful partnerships with key industry players.</p>
+                    <p>Developed and executed sponsorship strategies based on data analysis, leading to a 50% increase in sponsor engagement and contributions.</p> 
+                    <button type="button" onclick="closePopup('popup4')">Close</button>
+                </div>
+                
             </ul>
         </div>
         <img src="panda.png" class="featuring-img animation">
@@ -63,6 +73,28 @@
     <div class="footer">
         <p>&copy;Alina Cui 2024. All rights reserved.</p>
     </div>
+<script>
+// let popup = document.getElementById("popup")
 
+// function openPopup(){
+//     popup.classList.add('openPopup')
+// }
+
+// // figure this out 
+// function closePopup(){
+//     popup.classList.remove('openPopup')
+// }
+
+function openPopup(popupId) {
+        let popup = document.getElementById(popupId);
+        popup.classList.add('openPopup');
+    }
+
+    function closePopup(popupId) {
+        let popup = document.getElementById(popupId);
+        popup.classList.remove('openPopup');
+    }
+
+</script>
 </body>
 </html>
