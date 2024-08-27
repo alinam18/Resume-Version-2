@@ -223,6 +223,14 @@ nav ul li a{
 
 @media (max-width: 600px) {
 
+
+    .experiencename{
+        font-size: 20px; 
+        margin-bottom: 20%;
+        
+    }
+
+
     .leftSection, .experiences {
         width: 85%;
         padding: 10px;
