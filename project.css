@@ -26,6 +26,7 @@
     width:200px;
 }
 
+
 nav{
     padding: 10px 0;
     display: flex;
@@ -70,6 +71,126 @@ nav ul li a{
 
 }
 
+.project{
+    font-size: 20px; 
+    margin-bottom: 20%;
+    
+}
+
+.container{
+    /* display: flex; */
+    text-align: center;
+    flex-direction: column; 
+    /* align-items: flex-start;  */
+    /* justify-content: flex-start;  */
+    gap: 20px;
+}
+
+.btn{
+    /* padding: 50px 100px; */
+    padding: 2em 2em;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #FFFF;
+    border: 0;
+    margin: 1%;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 200;
+    border-radius: 50px;
+    transition: transform 0.2s;
+    
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.inline-overview {
+    display: flex;
+    align-items: center;
+}
+
+
+.popup{
+    background-color: #DAEDF7;
+    border-radius: 50px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    /* testing purpose */
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: 200;
+    font-size: 100%;
+    width: 80vw;
+    height: auto;
+    max-height: 80vh;
+    visibility: hidden;
+    box-shadow: 0px 0px 50000px rgba(0, 0, 0, 0.5);
+
+}
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;      
+}
+
+.popup button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #FFFF;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-weight: 200;
+    font-size: 80%;
+    transition: transform 0.2s;
+    border-radius: 4px;
+}
+
+
+.openPopup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Ensuring the popup scales up when visible */
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 28.125%; /* This maintains the aspect ratio */
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+    margin-top: 1.6em;
+    margin-bottom: 0.9em;
+    overflow: hidden;
+    border-radius: 8px;
+    will-change: transform;
+}
+
+.slideshow-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.website_overview{
+    margin-top: 3%;
+    width:60%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+
 
 .footer {
     position: relative;
@@ -82,10 +203,6 @@ nav ul li a{
     bottom: 0%; /* Ensure the footer stays at the bottom */
 }
 
-.project-information {
-    display: None;
-    cursor: pointer;
-}
 .animation {
     opacity: 0;
     transform: translateY(30px);
