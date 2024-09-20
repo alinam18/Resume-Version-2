@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="experience.css">
+    <!-- <script defer src="about.js"></script> -->
+</head>
+
+
+<body>
+    <div class="background">
+        <nav>
+            <a href="index.html">
+                <img src="logo.png" class="logo" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="games.html">Games</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="animation">Experiences</h1>
+        </div>
+        <div class="experiencename">
+            <ul>
+                <div class="container">
+                    <div class="button-grid">
+                    <!-- button data engineering  -->
+                    <button type="button" class="btn" onclick="openPopup('popup5')">Data Engineering Intern</button>
+                    <div class="popup" id="popup5">
+                        <h3>Data Army</h3>
+                        <img src="DataArmy.png" class="logo">
+                        <p>Responsible for building <b>cloud solutions</b> within the PropTech cloud, utilising <b>Snowflake, AWS, and Microsoft Azure</b> to deliver optimised client solutions.</p>
+                        <p>Developing and implementing <b>machine learning models to analyse data</b> and create targeted solutions for clients. </p>
+                        <p>Managing <b>data warehouses</b> and ensuring efficient data storage, retrieval, and processing for enhanced business outcomes.</p>
+                        <button type="button" onclick="closePopup('popup5')">Close</button>
+                    </div>
+                    <!-- button master data science -->
+                    <button type="button" class="btn" onclick="openPopup('popup6')">Master Data Science Intern</button>
+                    <div class="popup" id="popup6">
+                        <h3>Campari Group</h3>
+                        <img src="campari-group-logo.png" class="logo">
+                        <p>Collaborating with data management to handle and optimise data using <b>SAP</b>, ensuring alignment of <b>data warehouses</b> and metrics across branches in the <b>US, Italy, Japan, China, and Singapore.</b> </p>
+                        <p>Developing solutions to enhance <b>data management processes in the SAP system</b> and streamline organisational workflows. </p>
+                        <p>Managing and maintaining high-quality data for efficient operations and <b>international consistency.</b></p>
+                        <button type="button" onclick="closePopup('popup6')">Close</button>
+                    </div>
+
+
+                    <!-- button accounting assistant -->
+                    <button type="button" class="btn" onclick="openPopup('popup1')">Accounting Assistant</button>
+                    <div class="popup" id="popup1">
+                        <h3>Parras and Associates</h3>
+                        <p>Data Integration and Automation: Implemented <b>automated solutions for data entry and integration</b>, enhancing productivity and accuracy in client data handling.</p>
+                        <p>Proficient in Data Analysis and Management: Leveraged financial software such as <b>MYOB and advanced functionalities of Microsoft Excel</b> for efficient client data management, data analysis, and reporting.</p>
+                        <button type="button" onclick="closePopup('popup1')">Close</button>
+                    </div>
+
+                    <!-- Button marketing director -->
+                    <button type="button" class="btn" onclick="openPopup('popup2')">Marketing Director</button>
+                    <div class="popup" id="popup2">
+                        <h3>UNSW Data Science Society</h3>
+                        <img src="datasoc.png" class="logo">
+                        <p>Designed innovative marketing campaigns for the Data Science Society to strengthen student engagement.</p>
+                        <p>Developed a range of branded merchandise, enhancing the society’s visibility and sense of identity.</p>
+                        <p>Demonstrated strong problem-solving skills and analytical thinking in managing and interpreting large datasets to support business decisions.</p>
+                        <button type="button" onclick="closePopup('popup2')">Close</button>
+                    </div>
+
+                    <!-- Button sponsorship director -->
+                    <button type="button" class="btn" onclick="openPopup('popup3')">Sponsorship Director</button>
+                    <div class="popup" id="popup3">
+                        <h3>Nippon Student Association</h3>
+                        <img src="nsa.webp" class="logo">
+                        <p>Analysed sponsorship data to identify trends and opportunities, producing comprehensive reports for stakeholders to support decision-making processes.</p>
+                        <p>Leveraged data insights to craft persuasive proposals and negotiate sponsorship deals, resulting in successful partnerships with key industry players.</p>
+                        <p>Developed and executed sponsorship strategies based on data analysis, leading to a 50% increase in sponsor engagement and contributions.</p> 
+                        <button type="button" onclick="closePopup('popup3')">Close</button>
+                    </div>
+                    <!-- Button 4 -->
+                    <button type="button" class="btn" onclick="openPopup('popup4')">Cisco</button>
+                    <div class="popup" id="popup4">
+                        <h3>Job Shadowing</h3>
+                        <img src="cisco.png" class="logo">
+                        <p>Contributed analytical insights to discussions, influencing data-centric decision-making in marketing.</p>
+                        <p>Collaborated on the analysis of market trends and consumer behaviours.</p>
+                        <button type="button" onclick="closePopup('popup4')">Close</button>
+                    </div>
+                </div>
+            </ul>
+    </div>
+    <div class="footer">
+        <p>&copy;Alina Cui 2024. All rights reserved.</p>
+    </div>
+
+<script>
+
+function openPopup(popupId) {
+    let popup = document.getElementById(popupId);
+    popup.classList.add('openPopup');
+}
+
+function closePopup(popupId) {
+    let popup = document.getElementById(popupId);
+    popup.classList.remove('openPopup');
+}
+
+</script>
+</body>
+</html>
