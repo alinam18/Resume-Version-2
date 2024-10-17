@@ -79,12 +79,16 @@ nav ul li a{
     position: absolute;
     right: 0;
     bottom: 20%;
+    z-index: 5;
 
     /* margin-top: 15%; */
 }
 
 .featuring-img.animation{
     animation-delay: 1s;
+}
+body, html {
+    overflow: hidden;
 }
 
 .animation {
@@ -100,7 +104,66 @@ nav ul li a{
     }
     
 }
+.chatbox-container {
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    position: relative; /* or absolute */
+    z-index: 10;
+    bottom: 100px;
+    left: 100px;
+}
 
+.chatbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbox-header {
+    padding: 15px;
+    background-color: #E6E6FA;
+    color: #333;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .chatbox-messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .chatbox-input {
+    display: flex;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .chatbox-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .chatbox-input button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #E6E6FA;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .chatbox-input button:hover {
+    background-color: #E6E6FA;
+  }
 
 /* new css depedning on the size  */
 
