@@ -52,16 +52,14 @@ nav ul li a{
 .content {
     position: relative;
     margin-top: 15%;
-    max-width: 600px;
     z-index: 2;
     width: 85%;
     padding: 10px;
     margin-bottom: 20px;
-    font-size: 100px;
+    font-size: 5vw;
 }
 
 .container {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -70,16 +68,14 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-gap: 20px; /* Gap between buttons */
-    max-width: 600px;
 }
 
 .btn{
-    padding: 10px 60px;
+    padding: 4vw;
     background-color: #FFFF;
     border: 0;
-    outline: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 200;
     border-radius: 10px;
     transition: transform 0.2s;
@@ -103,24 +99,30 @@ nav ul li a{
     z-index: 1000;
     text-align: center;
     padding: 10px 30px;
+    /* padding: 10vw; */
+
     font-weight: 200;
     font-size: 75%;
-    width: 80vw;
+    /* width: 80vw; */
     height: auto;
     max-height: 80vh;
     visibility: hidden;
     box-shadow: 0px 0px 50000px rgba(0, 0, 0, 0.5);
-
     /* transition: transform 0.3s ease, visibility 0s linear 0.3s;  */
 
 
 }
 .popup h3{
     margin: 10px;
+    font-size: 3vw;
+    font-weight: 450;
+    
+}
+.popup li {
+    text-align: left;
 }
 
 .popup button {
-
     margin-top: 10px;
     background-color: #333;
     color: #FFFF;
@@ -182,7 +184,7 @@ nav ul li a{
     bottom: 0%; /* Ensure the footer stays at the bottom */
 }
 
-
+/* 
 @media (max-width: 600px) {
 
 
@@ -215,7 +217,6 @@ nav ul li a{
 
     .featuring-img {
         width: 400px;
-        /* position: absolute; */
         left: 25%;
         bottom: 5%;
     }
@@ -230,4 +231,4 @@ nav ul li a{
         bottom: 0%; 
     }
 
-}
+} */

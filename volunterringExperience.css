@@ -121,7 +121,6 @@ nav ul li a{
 }
 
 .popup button {
-
     margin-top: 10px;
     background-color: #333;
     color: #FFFF;
@@ -152,12 +151,14 @@ nav ul li a{
 
 .timeline-item h4 {
     font-size: 1.5vw;
+    text-align: left;
 }
 
 .timeline-item p {
     left:0;
     font-size: 1vw;
     color: #333;
+    text-align: left;
 }
 
 .timeline-item::before {
@@ -244,7 +245,7 @@ nav ul li a{
 
     .featuring-img {
         width: 400px;
-        /* position: absolute; */
+        position: absolute; 
         left: 25%;
         bottom: 5%;
     }
@@ -260,3 +261,4 @@ nav ul li a{
     }
 
 }
+*/
