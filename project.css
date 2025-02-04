@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    color: #333;
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 100%;
+    
+}*
 
-}
 
 .background{
     width: 100%;
@@ -16,14 +18,11 @@
     padding: 10px 10%;
     overflow: hidden;
     position: absolute;
-
 }
-
 
 .logo{
     width:200px;
 }
-
 
 nav{
     padding: 10px 0;
@@ -31,12 +30,14 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
 nav ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
     margin: 0; 
 }
+
 nav ul li {
     display: inline-block;
     margin: 10px 15px;
@@ -48,8 +49,7 @@ nav ul li a{
     font-weight: 200;
 }
 
-
-.title {
+.content {
     position: relative;
     margin-top: 15%;
     z-index: 2;
@@ -58,38 +58,22 @@ nav ul li a{
     margin-bottom: 20px;
     font-size: 5vw;
 }
-
-.title h1{
-    font-size: 100px;
-    max-width: 600px;
-}
-
-.title p{
-    font-size: 25px;
-    max-width: 800px;
+.content p.animation {
+    font-size: 2vw;
     font-weight: 200;
-    margin: 10px 0 50px;
-    animation-delay: 0.5s;
-
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 
 .project{
     font-size: 20px; 
     margin-bottom: 20%;
     
 }
-
-.container{
-    /* display: flex;
-    text-align: center;
-    flex-direction: column; 
-    justify-content: flex-start;  
-    gap: 20px; 
-    */
-    display: flex;
-    justify-content: center;
-}
-
 .button-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
@@ -112,11 +96,7 @@ nav ul li a{
 .btn:active{
     transform: scale(0.95);
 }
-/* 
-.inline-overview {
-    display: flex;
-    align-items: center;
-} */
+
 
 
 .popup{
@@ -142,11 +122,7 @@ nav ul li a{
     visibility: hidden;
     box-shadow: 0px 0px 50000px rgba(0, 0, 0, 0.5);
 
-/* }
-.no-bullets {
-    list-style-type: none;
-    padding-left: 0;      
-} */
+}
 
 .popup button {
     margin-top: 10px;
@@ -162,12 +138,25 @@ nav ul li a{
     border-radius: 4px;
 }
 
+.popup h3 {
+    margin: 10px;
+    font-size: 3vw;
+    font-weight: 200;
+}
+.popup p {
+    padding: 1vw;
+    text-align: left;
+}
+.popup li {
+    text-align: left;
+}
 
 .openPopup {
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1); /* Ensuring the popup scales up when visible */
 }
+
 
 .slideshow-container {
     position: relative;
@@ -246,7 +235,10 @@ nav ul li a{
     
 }
 
+.experiences.animation{
+    animation-delay: 1s;
 
+}
 
 @media (max-width: 600px) {
     .title h1{

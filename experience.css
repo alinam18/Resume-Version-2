@@ -58,6 +58,10 @@ nav ul li a{
     margin-bottom: 20px;
     font-size: 5vw;
 }
+.content p.animation {
+    font-size: 2vw;
+    font-weight: 200;
+}
 
 .container {
     display: flex;
