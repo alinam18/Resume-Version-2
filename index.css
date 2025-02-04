@@ -79,8 +79,7 @@ nav ul li a{
     position: absolute;
     right: 0;
     bottom: 20%;
-    z-index: 5;
-
+    z-index: 1;
     /* margin-top: 15%; */
 }
 
