@@ -42,14 +42,6 @@ This is the second version of my online resume website, built as part of my fron
 - **style.css** - Styles used throughout the website.
 - **script.js** - JavaScript functions used to add interactivity (like the Tic Tac Toe game and other features).
 
-
-## Future Enhancements
-
-- Add more interactive games.
-- Make the site mobile responsive.
-- Improve accessibility features.
-- Potentially integrate with a back-end system to store and update resume data dynamically.
-
 ## Contact
 
 For more information or if you would like to connect, feel free to reach out to me at alinamarin.cui@gmail.com.
