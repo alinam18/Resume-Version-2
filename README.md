@@ -2,6 +2,8 @@
 second updated resume website
 a# Resume-Version-2
 
+https://alinam18.github.io/Resume-Version-2/
+
 This is the second version of my online resume website, built as part of my front-end project. The site is designed to showcase my skills, experience, and various games I have developed.
 
 ## Technologies Used
@@ -40,11 +42,6 @@ This is the second version of my online resume website, built as part of my fron
 - **style.css** - Styles used throughout the website.
 - **script.js** - JavaScript functions used to add interactivity (like the Tic Tac Toe game and other features).
 
-## How to Run
-
-1. Download or clone the repository to your local machine.
-2. Open the `index.html` file in your browser to view the website.
-3. You can navigate between pages like **About Me**, **Experience**, **Games**, and more from the menu.
 
 ## Future Enhancements
 
