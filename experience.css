@@ -188,51 +188,30 @@ nav ul li a{
     bottom: 0%; /* Ensure the footer stays at the bottom */
 }
 
-/* 
-@media (max-width: 600px) {
-
-
-    .experiencename{
-        font-size: 20px; 
-        margin-bottom: 20%;
-        
-    }
-
-
-    .leftSection, .experiences {
-        width: 85%;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-    .leftSection p{
-        display: none;
-    
-    }
-    .experiences {
-        z-index: 2;
-        max-width: 85%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .leftSection h1{
-        font-size: 50px;
-    }
-
-    .featuring-img {
-        width: 400px;
-        left: 25%;
-        bottom: 5%;
-    }
-    .footer {
+@media (max-width: 750px) {
+    /* .title h1{ font-size: 50px; } */
+    .popup {
+        background-color: #DAEDF7;
+        border-radius: 10px;
         position: fixed;
-        width: 100%;
-        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
         text-align: center;
-        z-index: 2;
+        padding: 10px 30px;
         font-weight: 200;
-        margin-top: auto;
-        bottom: 0%; 
+        font-size: 75%;
+        width: min(80vw, 400px);
+        max-height: 70vh;
+        overflow: auto;
+        visibility: hidden;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+        z-index: 10;
     }
-
-} */
+    .openPopup {
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1); /* Ensuring the popup scales up when visible */
+    }
+}
