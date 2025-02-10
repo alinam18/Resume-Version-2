@@ -211,32 +211,15 @@ nav ul li a{
         
     }
 
-
-    .leftSection, .experiences {
-        width: 85%;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-    .leftSection p{
-        display: none;
-    
-    }
-    .experiences {
-        z-index: 2;
-        max-width: 85%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .leftSection h1{
-        font-size: 50px;
-    }
+        font-size: 10vw;
+        /* max-width: 100%; */
 
-    .featuring-img {
-        width: 400px;
-        /* position: absolute; */
-        left: 25%;
-        bottom: 5%;
+    }
+    .rightSection p {
+        font-size: 5vw;
+        max-width: 100%;
+
     }
     .footer {
         position: fixed;

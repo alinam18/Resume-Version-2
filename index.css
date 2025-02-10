@@ -182,22 +182,12 @@ body, html {
         position: absolute;
     }
     nav{
-        padding: 10px 0;
-        display: flex;
         align-items: flex-start;
-        justify-content: space-between;
     }
-    nav ul {
-        list-style-type: none;
-        text-align: center;
-        padding: 0;
-        margin: 0; 
-        top: 0;
+    .content h1{
+        font-size: 13vw;
     }
-    nav ul li {
-        display: inline-block;
-        margin: 10px 15px;
-    }
+
     .featuring-img {
         width: 600px;
         position: absolute;
